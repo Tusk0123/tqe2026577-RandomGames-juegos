@@ -1,0 +1,48 @@
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Estilo para ajustar el tamaño de las imágenes del carrusel */
+.carousel-inner img {
+    width: 100%; /* Ancho completo */
+    height: 400px; /* Altura fija (puedes ajustarla según tus necesidades) */
+    object-fit: cover; /* Esto mantiene el aspecto de la imagen mientras llena el contenedor */
+}
+
+.carousel-caption {
+    background: rgba(26, 34, 40, 0.7); /* Fondo oscuro más opaco */
+    color: #e0bb16; /* Texto dorado */
+    border-radius: 10px;
+    padding: 40px; /* Aumentar el padding para hacer el fondo más grande */
+    font-size: 1.5rem; /* Aumentar tamaño de la letra */
+}
+
+.carousel-caption h5 {
+    font-size: 2rem; /* Tamaño más grande para el título */
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem; /* Tamaño más grande para el párrafo */
+}
+
+.carousel {
+    margin-top: -48px; /* Ajusta este valor para mover el carrusel hacia arriba o hacia abajo */
+    transition: transform 0.8s, filter 0.8s;
+}
+
+.small-carousel {
+    transform: scale(0.8);
+    filter: blur(5px);
+}
+
+/* Opcional: Estilos personalizados para los indicadores del carrusel */
+.carousel-indicators li {
+    background-color: #e0bb16;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1); /* Cambia el color de las flechas a blanco */
+}
